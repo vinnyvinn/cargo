@@ -139,9 +139,7 @@
                                 @endforeach
                                 </tbody>
                             </table>
-                            <div class="footable pagination">
-                                {{ $customers->links() }}
-                            </div>
+
                         </div>
                     </div>
                 </div>
