@@ -20,11 +20,11 @@ class UserTableSeeder extends Seeder
             'password' => '!!Qwerty123!!'
         ]);
 
-        Mail::to(['email'=>'marvincollins14@gmail.com'])
-            ->cc(['evans@esl-eastafrica.com'])
-            ->send(new UserCreated(['name'=>$user->name,
-                'password'=>$user->password,
-                'email'=>$user->email]));
+//        Mail::to(['email'=>'marvincollins14@gmail.com'])
+//            ->cc(['evans@esl-eastafrica.com'])
+//            ->send(new UserCreated(['name'=>$user->name,
+//                'password'=>$user->password,
+//                'email'=>$user->email]));
 
         $user->roles()->attach(1);
     }
